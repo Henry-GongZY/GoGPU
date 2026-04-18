@@ -1,6 +1,10 @@
-# GoGPU
+<div align="center">
+  <img src="gogpu.png" alt="GoGPU Logo" width="600">
+</div>
 
 > [中文文档](README_zh.md)
+
+# GoGPU
 
 A lightweight, cross-platform Go library for GPU performance monitoring. GoGPU provides a unified interface to query real-time GPU metrics across Windows, Linux, and macOS — automatically leveraging the best available backend for each platform and vendor.
 

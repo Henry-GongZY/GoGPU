@@ -1,6 +1,10 @@
-# GoGPU
+<div align="center">
+  <img src="gogpu.png" alt="GoGPU Logo" width="600">
+</div>
 
 > [English Documentation](README.md)
+
+# GoGPU
 
 一个轻量级、跨平台的 Go 语言 GPU 性能监控库。GoGPU 提供统一的接口，用于在 Windows、Linux 和 macOS 上查询实时 GPU 指标——自动为每个平台和厂商选择最佳的底层后端。
 
