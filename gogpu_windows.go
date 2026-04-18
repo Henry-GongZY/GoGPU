@@ -10,10 +10,11 @@ type windowsMonitorWrapper struct {
 }
 
 // NewMonitor is the main entry point to initialize GoGPU on Windows.
-func NewMonitor() GPUMonitor {
-	return &windowsMonitorWrapper{
+func NewMonitor() *GPUMonitor {
+	backend := &windowsMonitorWrapper{
 		impl: windows.NewUnifiedMonitor(),
 	}
+	return &GPUMonitor{backend: backend}
 }
 
 func (w *windowsMonitorWrapper) GetGPUs() ([]GPUInfo, error) {
@@ -52,6 +53,5 @@ func (w *windowsMonitorWrapper) GetStatus(index int) (GPUStatus, error) {
 }
 
 func (w *windowsMonitorWrapper) Close() error {
-	// Add close logic if platform requires
-	return nil
+	return w.impl.Close()
 }
