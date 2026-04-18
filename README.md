@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="gogpu.png" alt="GoGPU Logo" width="600">
+  <img src="gogpu.png" alt="GoGPU Logo" width="400">
 </div>
 
 > [中文文档](README_zh.md)
